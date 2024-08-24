@@ -1,0 +1,41 @@
+package bankManagementSystem;
+import javax.swing.*;
+
+import java.awt.*;
+import java.awt.event.*;
+
+public class MiniStatement extends JFrame implements ActionListener{
+	
+	String pinNumber;
+	
+	MiniStatement(String pinNumber){
+		
+		this.pinNumber = pinNumber;
+		
+		setTitle("Mini Statement");
+		
+		JLabel text = new JLabel();
+		add(text);
+		
+		JLabel bank = new JLabel("Citi Bank");
+		bank.setBounds(150,20,100,20);
+		add(bank);
+		
+		setSize(400,600);
+		setLocation(20,20);
+		getContentPane().setBackground(Color.white);
+		setVisible(true);
+		
+		
+	}
+	
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		
+	}
+
+	public static void main(String[] args) {
+		new MiniStatement("");
+	}
+
+}

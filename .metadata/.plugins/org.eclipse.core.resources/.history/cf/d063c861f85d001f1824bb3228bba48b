@@ -1,0 +1,16 @@
+package bankManagementSystem;
+import javax.swing.*;
+
+public class Deposit extends JFrame{
+	
+	Deposit(){
+		setSize(900,900);
+		setLocation(300,0);
+//		setVisible(true);
+	}
+
+	public static void main(String[] args) {
+		new Deposit();
+	}
+
+}

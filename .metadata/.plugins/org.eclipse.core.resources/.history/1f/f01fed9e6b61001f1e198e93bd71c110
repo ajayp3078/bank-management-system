@@ -1,0 +1,32 @@
+package bankManagementSystem;
+import javax.swing.*;
+
+import java.awt.*;
+import java.awt.event.*;
+
+public class MiniStatement extends JFrame implements ActionListener{
+	
+	String pinNumber;
+	
+	MiniStatement(String pinNumber){
+		
+		this.pinNumber = pinNumber;
+		
+		setSize(400,600);
+		setLocation(20,20);
+		getContentPane().setBackground(Color.white);
+		setVisible(true);
+		
+		
+	}
+	
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		
+	}
+
+	public static void main(String[] args) {
+		new MiniStatement("");
+	}
+
+}

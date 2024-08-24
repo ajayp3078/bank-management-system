@@ -1,0 +1,39 @@
+package bankManagementSystem;
+
+import javax.swing.*;
+import java.awt.*;
+
+public class PinChange extends JFrame{
+	
+	String pinNumber;
+	
+	PinChange(String pinNumber){
+		
+		this.pinNumber = pinNumber;
+		
+		ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResource("icons/atm.jpg"));
+		Image i2 = i1.getImage().getScaledInstance(900, 900, Image.SCALE_DEFAULT);
+		ImageIcon i3 = new ImageIcon(i2);
+		JLabel image = new JLabel(i3);
+		add(image);
+		
+		JLabel l1 = new JLabel("Enter");
+		l1.setFont(new Font("System", Font.BOLD, 18));
+		l1.setForeground(Color.white);
+		l1.setBounds(200,250,120,30);
+		image.add(l1);
+		
+		
+		
+		setSize(900,900);
+		setBounds(300,0,900,900);
+//		setUndecorated(true);
+		setVisible(true);
+		
+		
+	}
+	
+	public static void main(String[] args) {
+		new PinChange("");
+	}
+}

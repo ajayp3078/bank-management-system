@@ -1,0 +1,21 @@
+package bankManagementSystem;
+
+import javax.swing.*;
+
+public class PinChange extends JFrame{
+	
+	PinChange(){
+		
+		
+		setSize(900,900);
+		setBounds(300,0,900,900);
+		setUndecorated(true);
+		setVisible(true);
+		
+		
+	}
+	
+	public static void main(String[] args) {
+		new PinChange();
+	}
+}
